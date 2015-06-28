@@ -1,15 +1,17 @@
 /**
- *
- * Created by Nielab Schahrochie on 17.04.15.
- * Copyright (c) 2015 haw. All rights reserved.
- *
- */
+*
+* Created by Nielab Schahrochie on 17.04.15.
+* Copyright (c) 2015 haw. All rights reserved.
+*
+*/
 
 #include "cannyEdgeDet.h"
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
+using namespace std;
 using namespace cv;
+
 
 CannyEdgeDet::CannyEdgeDet()
 {
@@ -19,20 +21,23 @@ CannyEdgeDet::~CannyEdgeDet()
 {
 }
 
+int edgeThresh = 1;
+int lowThreshold = 150;
+int ratio = 3;
+int kernel_size = 3;
 const char* result = "Canny";
+Mat src_gray;
 Mat dst;
+Mat detected_edges;
+
 
 // CannyThreshold
 void CannyEdgeDet::cannyThreshold(){
-	int edgeThresh = 1;
-	int lowThreshold = 150;
-	int ratio = 3;
-	int kernel_size = 3;
-	Mat detected_edges;
+	
 
 	// Sobel mit Kern 3
 	blur(src_gray, detected_edges, Size(3, 3));
-	
+
 	// Canny detector
 	Canny(detected_edges, detected_edges, lowThreshold, lowThreshold*ratio, kernel_size);
 
@@ -44,7 +49,7 @@ void CannyEdgeDet::cannyThreshold(){
 	imshow(result, dst);
 }
 
-void CannyEdgeDet::runCanny(Mat src_gray){
+void CannyEdgeDet::runCanny(){
 	/// Load an image
 	src_gray = imread("fanta.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 
@@ -56,5 +61,5 @@ void CannyEdgeDet::runCanny(Mat src_gray){
 
 	// Anzeigen
 	cannyThreshold(/*0, 0*/);
-	
+
 }

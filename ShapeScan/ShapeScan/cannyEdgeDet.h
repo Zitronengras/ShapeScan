@@ -14,9 +14,10 @@ public:
 	~CannyEdgeDet();
 
 	Mat src_gray;
-	/*Mat dst, detected_edges;
+	/*Mat dst;
+	Mat detected_edges;*/
 
-	int edgeThresh;
+	/*int edgeThresh;
 
 	//Schwellenwert
 	int lowThreshold;
@@ -29,9 +30,8 @@ public:
 
 	//Ergebnis
 	const char* result;*/
-
-	void cannyThreshold();
 	void runCanny();
+	void cannyThreshold();
 
 private:
 
