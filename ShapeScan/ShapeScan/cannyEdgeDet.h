@@ -5,10 +5,12 @@
 #include <iostream>
 
 using namespace std;
+using namespace cv;
 
 class CannyEdgeDet{
 
 public:
+	CannyEdgeDet();
 	~CannyEdgeDet();
 
 	Mat src_gray;
@@ -28,7 +30,7 @@ public:
 	//Ergebnis
 	const char* result;
 
-	static void CannyThreshold();
+	void cannyThreshold();
 	int runCanny(Mat image);
 
 private:

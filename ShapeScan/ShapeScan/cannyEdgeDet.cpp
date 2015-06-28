@@ -24,7 +24,7 @@ CannyEdgeDet::~CannyEdgeDet()
 void CannyEdgeDet::cannyThreshold(){
 	edgeThresh = 1;
 	lowThreshold = 150;
-	ratio = 3:
+	ratio = 3;
 	kernel_size = 3;
 	result = "Canny";
 
@@ -32,10 +32,10 @@ void CannyEdgeDet::cannyThreshold(){
 	blur(src_gray, detected_edges, Size(3, 3));
 	
 	// Canny detector
-	Canny(detected_edges, detected_edges, lowThreshold, lowThreshold*ratio, kernel:size);
+	Canny(detected_edges, detected_edges, lowThreshold, lowThreshold*ratio, kernel_size);
 
 	// schwarzes Bild
-	dst = Scalar__all(0);
+	dst = Scalar::all(0);
 
 	//Kanten in schwarzes Bild kopieren
 	src_gray.copyTo(dst, detected_edges);
@@ -50,7 +50,7 @@ int CannyEdgeDet::runCanny(Mat src_gray){
 	dst.create(src_gray.size(), src_gray.type());
 
 	// Anzeigefenster
-	namedWindow(ergebnis, WINDOW_AUTOSIZE);
+	namedWindow(result, WINDOW_AUTOSIZE);
 
 	// Anzeigen
 	cannyThreshold(/*0, 0*/);
