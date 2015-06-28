@@ -32,8 +32,7 @@ Mat detected_edges;
 
 
 // CannyThreshold
-Mat CannyEdgeDet::cannyThreshold(Mat src_gray){
-	
+Mat CannyEdgeDet::cannyThreshold(Mat src_gray){	
 
 	// Sobel mit Kern 3
 	blur(src_gray, detected_edges, Size(3, 3));
@@ -47,22 +46,12 @@ Mat CannyEdgeDet::cannyThreshold(Mat src_gray){
 	//Kanten in schwarzes Bild kopieren
 	src_gray.copyTo(dst, detected_edges);
 	return dst;
-	//imshow(result, dst);
 }
 
 Mat CannyEdgeDet::runCanny(Mat src_gray){
-	/// Load an image
-	//src_gray = imread("fanta.jpg", CV_LOAD_IMAGE_GRAYSCALE);
-
+	
 	// Matrix mit selben Maﬂen wie src_gray
 	dst.create(src_gray.size(), src_gray.type());
-
-	// Anzeigefenster
-	//namedWindow(result, WINDOW_AUTOSIZE);
-
-	// Anzeigen
 	
 	return cannyThreshold(src_gray);
-
-
 }
