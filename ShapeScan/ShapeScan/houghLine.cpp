@@ -17,10 +17,6 @@ HoughLine::~HoughLine()
 }
 
 Mat HoughLine::detectLines(Mat img){
-	//greyImage = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
-	
+	//Mat greyImage = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 	return img;
-
-
-
 }

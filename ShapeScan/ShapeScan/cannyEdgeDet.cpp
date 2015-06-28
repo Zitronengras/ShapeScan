@@ -30,7 +30,7 @@ Mat src_gray;
 Mat dst;
 Mat detected_edges;
 
-
+/*
 // CannyThreshold
 void CannyEdgeDet::cannyThreshold(){
 	
@@ -60,6 +60,6 @@ void CannyEdgeDet::runCanny(){
 	namedWindow(result, WINDOW_AUTOSIZE);
 
 	// Anzeigen
-	cannyThreshold(/*0, 0*/);
+	cannyThreshold(/*0, 0*);
 
-}
+}*/

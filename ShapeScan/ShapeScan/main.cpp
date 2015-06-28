@@ -4,11 +4,10 @@
 
 #include <opencv2\opencv.hpp>
 #include <iostream>
-#include "cannyEdgeDet.h"
+//#include "cannyEdgeDet.h"
 #include "houghLine.h"
 
 
-using namespace std;
 using namespace cv;
 
 

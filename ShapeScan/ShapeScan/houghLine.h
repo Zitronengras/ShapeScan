@@ -4,7 +4,7 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
-using namespace std;
+using namespace cv;
 
 class HoughLine{
 
@@ -12,11 +12,7 @@ public:
 	HoughLine();
 	~HoughLine();
 
-	//Mat greyImage;
-
-
 	Mat detectLines(Mat img);
-
 
 private:
 
