@@ -13,19 +13,19 @@ using namespace cv;
 
 void main(){
 
+	CannyEdgeDet cannyEdgeDet;
+	HoughLine hougLine;
+	//load image
 	Mat image = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 
-	CannyEdgeDet cannyEdgeDet;
-	namedWindow("Canny", WINDOW_AUTOSIZE);
+	//store image of canny
 	Mat cannyImg = cannyEdgeDet.runCanny(image);
-	imshow("Canny", cannyImg);
 
+	//store image of houghLine
+	Mat houghLineImg = hougLine.detectLines(cannyImg);
 
-	/*HoughLine hougLine;
-	namedWindow("HoughLine", WINDOW_AUTOSIZE);
-	imshow("HoughLine", hougLine.detectLines(image));*/
-	
-
+	namedWindow("ShapeScan", WINDOW_AUTOSIZE);
+	imshow("ShapeScan", houghLineImg);
 
 	waitKey(0);
 }
