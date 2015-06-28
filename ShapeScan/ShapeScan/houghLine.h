@@ -5,6 +5,7 @@
 #include <iostream>
 
 using namespace cv;
+using namespace std;
 
 class HoughLine{
 

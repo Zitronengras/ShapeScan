@@ -7,6 +7,8 @@
 #include <iostream>
 
 using namespace cv;
+using namespace std;
+
 
 HoughLine::HoughLine()
 {
@@ -26,7 +28,7 @@ Mat HoughLine::detectLines(Mat img){
 	Mat imgLines;
 	cvtColor(img, imgLines, CV_GRAY2BGR);
 
-	for (int i = 0; i < lines.size; i++){
+	for (int i = 0; i < lines.size(); i++){
 		float rho = lines[i][0];
 		float theta = lines[i][1];
 

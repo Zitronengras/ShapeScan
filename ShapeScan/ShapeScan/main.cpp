@@ -9,6 +9,7 @@
 
 
 using namespace cv;
+using namespace std;
 
 
 void main(){
