@@ -30,8 +30,13 @@ public:
 
 	//Ergebnis
 	const char* result;*/
+<<<<<<< HEAD
 	void runCanny();
 	void cannyThreshold();
+=======
+	Mat runCanny(Mat src_gray);
+	Mat cannyThreshold(Mat src_gray);
+>>>>>>> feature/hough_for_lines
 
 private:
 
