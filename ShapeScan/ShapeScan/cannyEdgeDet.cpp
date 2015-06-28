@@ -44,7 +44,7 @@ void CannyEdgeDet::cannyThreshold(){
 
 int CannyEdgeDet::runCanny(){
 	/// Load an image
-	src_gray = imread("fanta.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+	src_gray = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 
 	// Matrix mit selben Maﬂen wie src_gray
 	dst.create(src_gray.size(), src_gray.type());

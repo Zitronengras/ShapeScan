@@ -21,9 +21,15 @@
     <ClCompile Include="canny.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="houghLine.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cannyEdgeDet.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="houghLine.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

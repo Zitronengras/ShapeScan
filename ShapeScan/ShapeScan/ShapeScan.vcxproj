@@ -145,10 +145,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="canny.cpp" />
+    <ClCompile Include="houghLine.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cannyEdgeDet.h" />
+    <ClInclude Include="houghLine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

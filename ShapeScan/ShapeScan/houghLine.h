@@ -1,0 +1,26 @@
+#ifndef HOUGHLINE_H
+#define HOUGHLINE_H
+
+#include <opencv2/opencv.hpp>
+#include <iostream>
+
+using namespace std;
+
+class HoughLine{
+
+public:
+	~HoughLine();
+
+	Mat greyImage;
+
+
+	void detectLines();
+
+
+private:
+
+};
+
+#endif // HOUGHLINE_H
+
+
