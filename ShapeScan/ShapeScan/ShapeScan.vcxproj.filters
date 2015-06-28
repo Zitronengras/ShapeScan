@@ -18,13 +18,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="cannyEdgeDet.cpp">
-<<<<<<< HEAD
-=======
+    <ClCompile Include="houghLine.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="houghLine.cpp">
->>>>>>> feature/hough_for_lines
+    <ClCompile Include="cannyEdgeDet.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

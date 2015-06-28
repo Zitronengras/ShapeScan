@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1BD77751-0E5B-4120-AEAB-C6B351B1E159}</ProjectGuid>
+    <ProjectGuid>{6E33CF30-F71A-48A7-8799-2BAFE6DEC5FB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ShapeScan</RootNamespace>
   </PropertyGroup>
@@ -55,11 +55,11 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="OpenCV249_Win7x64_Debug.props" />
+    <Import Project="..\..\..\..\Projects\IMPLecture1\IMPLecture1\OpenCV249_Win7x64_Debug.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="OpenCV249_Win7x64_Debug.props" />
+    <Import Project="..\..\..\..\Projects\IMPLecture1\IMPLecture1\OpenCV249_Win7x64_Debug.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -146,10 +146,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cannyEdgeDet.cpp" />
-<<<<<<< HEAD
-=======
     <ClCompile Include="houghLine.cpp" />
->>>>>>> feature/hough_for_lines
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
