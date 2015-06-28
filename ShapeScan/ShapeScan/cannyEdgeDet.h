@@ -14,7 +14,7 @@ public:
 	~CannyEdgeDet();
 
 	Mat src_gray;
-	Mat dst, detected_edges;
+	/*Mat dst, detected_edges;
 
 	int edgeThresh;
 
@@ -28,10 +28,10 @@ public:
 	int kernel_size;
 
 	//Ergebnis
-	const char* result;
+	const char* result;*/
 
 	void cannyThreshold();
-	int runCanny(Mat image);
+	void runCanny();
 
 private:
 

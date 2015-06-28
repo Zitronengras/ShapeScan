@@ -17,5 +17,5 @@ HoughLine::~HoughLine()
 }
 
 void HoughLine::detectLines(){
-	greyImage = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+	//greyImage = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 }

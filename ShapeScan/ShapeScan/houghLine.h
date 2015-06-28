@@ -9,9 +9,10 @@ using namespace std;
 class HoughLine{
 
 public:
+	HoughLine();
 	~HoughLine();
 
-	Mat greyImage;
+	//Mat greyImage;
 
 
 	void detectLines();

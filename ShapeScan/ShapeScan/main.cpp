@@ -14,13 +14,13 @@ using namespace cv;
 
 void main(){
 
-	Mat image = imread("fanta.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+	//Mat image = imread("fanta.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 
 	CannyEdgeDet cannyEdgeDet;
-	HoughLine houghLine;
+	//HoughLine houghLine;
 
-	cannyEdgeDet.runCanny(image);
-	houghLine.detectLines();
+	cannyEdgeDet.runCanny();
+	//houghLine.detectLines();
 	
 
 	waitKey(0);

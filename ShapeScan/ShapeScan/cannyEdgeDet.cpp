@@ -19,14 +19,16 @@ CannyEdgeDet::~CannyEdgeDet()
 {
 }
 
+const char* result = "Canny";
+Mat dst;
 
 // CannyThreshold
 void CannyEdgeDet::cannyThreshold(){
-	edgeThresh = 1;
-	lowThreshold = 150;
-	ratio = 3;
-	kernel_size = 3;
-	result = "Canny";
+	int edgeThresh = 1;
+	int lowThreshold = 150;
+	int ratio = 3;
+	int kernel_size = 3;
+	Mat detected_edges;
 
 	// Sobel mit Kern 3
 	blur(src_gray, detected_edges, Size(3, 3));
@@ -42,9 +44,9 @@ void CannyEdgeDet::cannyThreshold(){
 	imshow(result, dst);
 }
 
-int CannyEdgeDet::runCanny(Mat src_gray){
+void CannyEdgeDet::runCanny(Mat src_gray){
 	/// Load an image
-	//src_gray = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+	src_gray = imread("fanta.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 
 	// Matrix mit selben Maﬂen wie src_gray
 	dst.create(src_gray.size(), src_gray.type());
