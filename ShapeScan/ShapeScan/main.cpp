@@ -20,7 +20,9 @@ void main(){
 	//cannyEdgeDet.runCanny();
 
 	HoughLine hougLine;
-	hougLine.detectLines(image);
+	namedWindow("HoughLine", WINDOW_AUTOSIZE);
+	imshow("HoughLine", hougLine.detectLines(image));
+	
 
 
 	waitKey(0);

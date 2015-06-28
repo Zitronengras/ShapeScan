@@ -15,7 +15,7 @@ public:
 	//Mat greyImage;
 
 
-	void detectLines(Mat img);
+	Mat detectLines(Mat img);
 
 
 private:

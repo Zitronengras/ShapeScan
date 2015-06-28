@@ -16,10 +16,10 @@ HoughLine::~HoughLine()
 {
 }
 
-void HoughLine::detectLines(Mat img){
+Mat HoughLine::detectLines(Mat img){
 	//greyImage = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
-	namedWindow("HoughLine", WINDOW_AUTOSIZE);
-	imshow("HoughLine", img);
+	
+	return img;
 
 
 
