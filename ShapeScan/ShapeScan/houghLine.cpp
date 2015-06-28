@@ -6,7 +6,6 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
-using namespace std;
 using namespace cv;
 
 HoughLine::HoughLine()
@@ -17,6 +16,11 @@ HoughLine::~HoughLine()
 {
 }
 
-void HoughLine::detectLines(){
+void HoughLine::detectLines(Mat img){
 	//greyImage = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+	namedWindow("HoughLine", WINDOW_AUTOSIZE);
+	imshow("HoughLine", img);
+
+
+
 }

@@ -5,7 +5,6 @@
 #include <iostream>
 
 using namespace std;
-using namespace cv;
 
 class HoughLine{
 
@@ -16,7 +15,7 @@ public:
 	//Mat greyImage;
 
 
-	void detectLines();
+	void detectLines(Mat img);
 
 
 private:
