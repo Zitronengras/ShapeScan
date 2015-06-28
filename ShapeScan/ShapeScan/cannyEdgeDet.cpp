@@ -33,10 +33,14 @@ Mat detected_edges;
 
 // CannyThreshold
 <<<<<<< HEAD
+<<<<<<< HEAD
 void CannyEdgeDet::cannyThreshold(){
 	
 =======
 Mat CannyEdgeDet::cannyThreshold(Mat src_gray){	
+>>>>>>> feature/hough_for_lines
+=======
+Mat CannyEdgeDet::cannyThreshold(Mat src_gray){
 >>>>>>> feature/hough_for_lines
 
 	// Sobel mit Kern 3
@@ -69,10 +73,10 @@ void CannyEdgeDet::runCanny(){
 
 =======
 Mat CannyEdgeDet::runCanny(Mat src_gray){
-	
+
 	// Matrix mit selben Maßen wie src_gray
 	dst.create(src_gray.size(), src_gray.type());
-	
+
 	return cannyThreshold(src_gray);
 >>>>>>> feature/hough_for_lines
 }
