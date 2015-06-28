@@ -5,16 +5,19 @@
 #include <iostream>
 
 using namespace std;
+using namespace cv;
 
 class CannyEdgeDet{
 
 public:
+	CannyEdgeDet();
 	~CannyEdgeDet();
 
 	Mat src_gray;
-	Mat dst, detected_edges;
+	/*Mat dst;
+	Mat detected_edges;*/
 
-	int edgeThresh;
+	/*int edgeThresh;
 
 	//Schwellenwert
 	int lowThreshold;
@@ -26,10 +29,9 @@ public:
 	int kernel_size;
 
 	//Ergebnis
-	const char* result;
-
+	const char* result;*/
+	void runCanny();
 	void cannyThreshold();
-	int runCanny();
 
 private:
 
