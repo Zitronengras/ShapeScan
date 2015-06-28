@@ -32,7 +32,7 @@ Mat detected_edges;
 
 
 // CannyThreshold
-Mat CannyEdgeDet::cannyThreshold(Mat src_gray){	
+Mat CannyEdgeDet::cannyThreshold(Mat src_gray){
 
 	// Sobel mit Kern 3
 	blur(src_gray, detected_edges, Size(3, 3));
@@ -49,9 +49,9 @@ Mat CannyEdgeDet::cannyThreshold(Mat src_gray){
 }
 
 Mat CannyEdgeDet::runCanny(Mat src_gray){
-	
+
 	// Matrix mit selben Maßen wie src_gray
 	dst.create(src_gray.size(), src_gray.type());
-	
+
 	return cannyThreshold(src_gray);
 }
