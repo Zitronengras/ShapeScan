@@ -28,7 +28,7 @@ public:
 	//Ergebnis
 	const char* result;
 
-	static void CannyThreshold();
+	void cannyThreshold();
 	int runCanny();
 
 private:
