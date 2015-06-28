@@ -4,7 +4,7 @@
 
 #include <opencv2\opencv.hpp>
 #include <iostream>
-//#include "cannyEdgeDet.h"
+#include "cannyEdgeDet.h"
 #include "houghLine.h"
 
 
@@ -15,12 +15,15 @@ void main(){
 
 	Mat image = imread("card.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 
-	//CannyEdgeDet cannyEdgeDet;
-	//cannyEdgeDet.runCanny();
+	CannyEdgeDet cannyEdgeDet;
+	namedWindow("Canny", WINDOW_AUTOSIZE);
+	Mat cannyImg = cannyEdgeDet.runCanny(image);
+	imshow("Canny", cannyImg);
 
-	HoughLine hougLine;
+
+	/*HoughLine hougLine;
 	namedWindow("HoughLine", WINDOW_AUTOSIZE);
-	imshow("HoughLine", hougLine.detectLines(image));
+	imshow("HoughLine", hougLine.detectLines(image));*/
 	
 
 
