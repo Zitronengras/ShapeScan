@@ -29,7 +29,7 @@ public:
 	const char* result;
 
 	static void CannyThreshold();
-	int runCanny();
+	int runCanny(Mat image);
 
 private:
 

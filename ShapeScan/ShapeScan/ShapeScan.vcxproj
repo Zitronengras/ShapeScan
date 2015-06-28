@@ -144,7 +144,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="canny.cpp" />
+    <ClCompile Include="cannyEdgeDet.cpp" />
     <ClCompile Include="houghLine.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
