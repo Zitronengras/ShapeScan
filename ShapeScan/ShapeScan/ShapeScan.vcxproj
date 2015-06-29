@@ -147,11 +147,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cannyEdgeDet.cpp" />
+    <ClCompile Include="houghCircle.cpp" />
     <ClCompile Include="houghLine.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cannyEdgeDet.h" />
+    <ClInclude Include="houghCircle.h" />
     <ClInclude Include="houghLine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
