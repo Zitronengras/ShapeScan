@@ -2,3 +2,9 @@
 *.sdf
 *.tlog
 *.idb
+*.exe
+*.pdb
+*.log
+*.obj
+*.ilk
+ShapeScan/ShapeScan.v12.suo
