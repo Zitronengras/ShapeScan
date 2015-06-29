@@ -7,7 +7,6 @@
 #include "cannyEdgeDet.h"
 #include "houghLine.h"
 
-
 using namespace cv;
 using namespace std;
 

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6E33CF30-F71A-48A7-8799-2BAFE6DEC5FB}</ProjectGuid>
+    <ProjectGuid>{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ShapeScan</RootNamespace>
   </PropertyGroup>
@@ -55,11 +55,11 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\Projects\IMPLecture1\IMPLecture1\OpenCV249_Win7x64_Debug.props" />
+    <Import Project="OpenCV249_Win7x64_Debug.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\Projects\IMPLecture1\IMPLecture1\OpenCV249_Win7x64_Debug.props" />
+    <Import Project="OpenCV249_Win7x64_Debug.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
