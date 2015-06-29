@@ -43,7 +43,7 @@ Mat HoughLine::detectLines(Mat img){
 		Point pt2(cvRound(x0 - 1000 * (-b)),
 			cvRound(y0 - 1000 * (a)));
 
-		line(imgLines, pt1, pt2, Scalar(70, 0, 5), 1, 8);
+		line(imgLines, pt1, pt2, Scalar(220, 234, 0), 1, 8); //BGR
 	}
 
 	return imgLines;
