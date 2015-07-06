@@ -146,12 +146,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="cannyEdgeDet.cpp" />
     <ClCompile Include="houghCircle.cpp" />
     <ClCompile Include="houghLine.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="cannyEdgeDet.h" />
     <ClInclude Include="houghCircle.h" />
     <ClInclude Include="houghLine.h" />

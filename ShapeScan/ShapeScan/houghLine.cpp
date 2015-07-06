@@ -25,6 +25,7 @@ Mat HoughLine::detectLines(Mat img){
 
 	HoughLines(img, lines, 1, CV_PI / 180, 175);
 
+
 	Mat imgLines;
 	cvtColor(img, imgLines, CV_GRAY2BGR);
 
