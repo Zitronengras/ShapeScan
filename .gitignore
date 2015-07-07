@@ -5,6 +5,8 @@
 
 ShapeScan/ShapeScan/x64/Debug/ShapeScan.lastbuildstate
 ShapeScan/ShapeScan/ShapeScan.vcxproj
+ShapeScan/ShapeScan/x64/
+ShapeScan/x64/
 
 *.exe
 *.pdb
@@ -14,3 +16,4 @@ ShapeScan/ShapeScan/ShapeScan.vcxproj
 ShapeScan/ShapeScan.v12.suo
 *.user
 
+*.filters

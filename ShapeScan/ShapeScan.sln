@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShapeScan", "ShapeScan\ShapeScan.vcxproj", "{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShapeScan", "ShapeScan\ShapeScan.vcxproj", "{6B91B887-37B0-42E7-92D1-46AC16AF2F46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}.Debug|Win32.ActiveCfg = Debug|Win32
-		{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}.Debug|Win32.Build.0 = Debug|Win32
-		{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}.Debug|x64.ActiveCfg = Debug|x64
-		{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}.Debug|x64.Build.0 = Debug|x64
-		{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}.Release|Win32.ActiveCfg = Release|Win32
-		{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}.Release|Win32.Build.0 = Release|Win32
-		{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}.Release|x64.ActiveCfg = Release|x64
-		{6712907C-74AD-4FD3-ABE7-1C310BCEEA9E}.Release|x64.Build.0 = Release|x64
+		{6B91B887-37B0-42E7-92D1-46AC16AF2F46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B91B887-37B0-42E7-92D1-46AC16AF2F46}.Debug|Win32.Build.0 = Debug|Win32
+		{6B91B887-37B0-42E7-92D1-46AC16AF2F46}.Debug|x64.ActiveCfg = Debug|x64
+		{6B91B887-37B0-42E7-92D1-46AC16AF2F46}.Debug|x64.Build.0 = Debug|x64
+		{6B91B887-37B0-42E7-92D1-46AC16AF2F46}.Release|Win32.ActiveCfg = Release|Win32
+		{6B91B887-37B0-42E7-92D1-46AC16AF2F46}.Release|Win32.Build.0 = Release|Win32
+		{6B91B887-37B0-42E7-92D1-46AC16AF2F46}.Release|x64.ActiveCfg = Release|x64
+		{6B91B887-37B0-42E7-92D1-46AC16AF2F46}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
