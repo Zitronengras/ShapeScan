@@ -13,8 +13,10 @@ ShapeScan/x64/
 *.log
 *.obj
 *.ilk
-ShapeScan/ShapeScan.v12.suo
+*.suo
 *.user
 
 *.filters
+*.vcxproj
 *.sln
+*.opensdf
