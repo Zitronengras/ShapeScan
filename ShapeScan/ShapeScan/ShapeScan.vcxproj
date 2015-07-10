@@ -72,6 +72,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\opencv\build\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -144,17 +145,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\ShapeScan\Camera.cpp" />
-    <ClCompile Include="..\..\..\ShapeScan\cannyEdgeDet.cpp" />
-    <ClCompile Include="..\..\..\ShapeScan\houghCircle.cpp" />
-    <ClCompile Include="..\..\..\ShapeScan\houghLine.cpp" />
-    <ClCompile Include="..\..\..\ShapeScan\main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\..\ShapeScan\Camera.h" />
     <ClInclude Include="..\..\..\ShapeScan\cannyEdgeDet.h" />
     <ClInclude Include="..\..\..\ShapeScan\houghCircle.h" />
     <ClInclude Include="..\..\..\ShapeScan\houghLine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="cannyEdgeDet.cpp" />
+    <ClCompile Include="houghCircle.cpp" />
+    <ClCompile Include="houghLine.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
