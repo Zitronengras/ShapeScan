@@ -1,27 +1,25 @@
+/***
+* Created vy Sonja Wittich
+*/
 #include "Camera.h"
 #include <iostream>
 #include <opencv2\opencv.hpp>
 #include <vector>
 #include <stdio.h>
 
-using namespace cv;
-using namespace std;
-
 Camera::Camera()
 {
 }
-
 
 Camera::~Camera()
 {
 }
 
 int Camera::process(VideoCapture& cap){
+	// Consolen Output
 	char filename[20];
 	string windowName = "Video | esc to quit | b to save backgroundImage | o to save objectImage";
-	cout << "Press b to save a background picture" << endl;
-	cout << "Press o to save a object picture" << endl;
-
+	
 	namedWindow(windowName, CV_WINDOW_KEEPRATIO);
 
 	for (;;){

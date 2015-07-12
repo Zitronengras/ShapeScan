@@ -1,3 +1,6 @@
+/***
+* Created by Sonja Wittich
+*/
 #pragma once
 #include <opencv2\opencv.hpp>
 #include <iostream>
@@ -12,7 +15,10 @@ class Camera
 public:
 	Camera();
 	~Camera();
-	Mat frame;
+	Mat frame,
+		backImg,
+		objImg,
+		temp;
 	int process(VideoCapture& cap);
 private:
 };
